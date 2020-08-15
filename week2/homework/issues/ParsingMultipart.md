@@ -48,15 +48,15 @@ Hint: It should be the request body. Think about the example Azure function. How
 
 ```js
 
-  //here's your boundary:
-  var boundary = multipart.getBoundary(req.headers['content-type']);
+//here's your boundary:
+var boundary = multipart.getBoundary(req.headers['content-type']);
   
 
-	// TODO: assign the body variable the correct value
-	var body = '<WHAT GOES HERE?>'
+// TODO: assign the body variable the correct value
+var body = '<WHAT GOES HERE?>'
 
-  // parse the body
-	var parts = multipart.Parse(body, boundary);
+// parse the body
+var parts = multipart.Parse(body, boundary);
 
 
 ```
