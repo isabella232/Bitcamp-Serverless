@@ -7,7 +7,7 @@ The Azure Function needs to:
 
 
 
-We're going to be focusing on Part 1, which involves parsing multipart form data. In any HTML <Form> element that receives involves a file upload(which ours does), the data is encoded in the `multipart/form-data` method. The default http encoding method is `application/x-www-form-urlencoded`, which encodes text into name/value pairs and works for text inputs but is inefficient for file or binary inputs. `multipart/form-data` indicates that one or more files are being inputted. Parsing this type of data is a little more complicated than usual. To simplify the process, we're going to use a npm library called `parse-multipart`.  
+We're going to be focusing on Part 1, which involves parsing multipart form data. In any HTML `<Form>` element that receives involves a file upload(which ours does), the data is encoded in the `multipart/form-data` method. The default http encoding method is `application/x-www-form-urlencoded`, which encodes text into name/value pairs and works for text inputs but is inefficient for file or binary inputs. `multipart/form-data` indicates that one or more files are being inputted. Parsing this type of data is a little more complicated than usual. To simplify the process, we're going to use a npm library called `parse-multipart`.  
 
 
 
