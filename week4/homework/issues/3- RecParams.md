@@ -68,6 +68,8 @@ const _getRecommendations = async(token, seedTracks, limit) => {
 }
 ```
 
+<br />
+<br />
 
 
 Now, we're going to work on the actual api call. Remember how we created a parameter string for our Face API call? 
@@ -79,7 +81,7 @@ let params = new URLSearchParams({
 })
 ```
 
-
+<br />
 
 We created a `URLSearchParams`  object. Let's do the same thing here:
 
@@ -87,6 +89,8 @@ We created a `URLSearchParams`  object. Let's do the same thing here:
 //Create a new URLSearchParams object called params
 let params = <CODE HERE>
 ```
+
+<br />
 
 Inside of your search params, specify these parameter-value pairs:
 
