@@ -43,15 +43,16 @@ The last part of the `_getRecommendations`  function is to make the fetch call. 
 
 Hint: Look back on your Face API call to see how we can add a parameter string.
 
-<details>
-	<summary><strong>Click for bigger hint: the actual face api code</strong> </summary>
-	
-	//FACE API CALL!! notice the ? and params.toString()!!!
-    let resp = await fetch(uriBase + '?' + params.toString(), {
-        //random code
-        }
-    })
 
+<details>
+  <summary><strong>Click for bigger hint: the actual face api code</strong></summary>
+  
+  ```javascript
+    //FACE API CALL!! notice the '?' and 'params.toString()' !!!
+    let resp = await fetch(endpoint + '?' + params.toString(), {
+        //random code
+    }
+  ```
 </details>
 
 ```js
