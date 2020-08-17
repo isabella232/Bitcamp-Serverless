@@ -93,8 +93,8 @@ Using the given code, add these things:
 
 ```js
 const _getPlaylistItems = async (token, playlistId, limit) => {
-  			//set the query parameter limit to this limit ^ param
-  			const queryString = '<QUERY STRING>'
+ 	//set the query parameter limit to this limit ^ param
+  	const queryString = '<QUERY STRING>'
         
         //hint: the api endpoint should include the playlistId parameter somewhere
         const result = await fetch('<API ENDPOINT>' + '?' + queryString, {
