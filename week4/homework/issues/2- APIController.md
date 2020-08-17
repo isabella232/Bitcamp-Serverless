@@ -2,14 +2,8 @@
 
 The `APIController`  module is responsible for making calls to the Spotify API. To have our app get data from the Spotify API, we have to go through an Authorization process. Read the **Client Credentials Flow** section of the Spotify Authorization Guide [here](https://developer.spotify.com/documentation/general/guides/authorization-guide/#client-credentials-flow). This type of flow does not allow access to any user-specific data, so we can only access public data.
 
-<br />
-<br />
-<br />
 
 Inside the APIController module, we're going to write a private method called `_getToken`  that will make the http request for a token. Note: it's common syntax for private methods to have an underscore in the beginning.
-
-<br />
-<br />
 
 
 **Use the information in the Authorization Guide**([link again](https://developer.spotify.com/documentation/general/guides/authorization-guide/#client-credentials-flow)) to fill in the necessary fields. Notice also that we've declared variables for the client ID and secret that you received when you registered the app. 
