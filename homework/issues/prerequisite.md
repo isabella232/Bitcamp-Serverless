@@ -25,15 +25,13 @@ After you have learned/refreshed your knowledge of JavaScript, let's get started
 - Use CSS to style your clock (ie: make it blue, green, yellow, etc)
 - Create animations for your clock (ie. when the minute hand changes, it rotates/spins)
 
-*Don't know where to get started?*
-
-Start off by creating a new function that starts your clock.
+*Don't know where to get started?* Start off by creating a new function that starts your clock:
 
 ```js
 function startTime() {}
 ```
 
-After this, you will need to create three variables.
+After this, you will need to create three variables:
 
 ```javascript
 var hr = " ";
@@ -41,7 +39,7 @@ var min = " ";
 var sec = " ";
 ```
 
-Also, make sure to reference the HTML you created the "clock" id in.
+Also, make sure to reference the HTML you created the "clock" id in:
 
 ```javascript
 document.getElementById("clock").innerHTML = " ";
