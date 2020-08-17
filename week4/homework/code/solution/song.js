@@ -14,14 +14,16 @@ const APIController = (function() {
                 'Authorization' : 'Basic ' + btoa(clientId + ':' + clientSecret)
             },
             body: 'grant_type=client_credentials'
+
         });
 
         const data = await result.json();
         return data.access_token;
     }
 
-    const _getTracks = async (token, tracksEndPoint, limit) => {
-        const result = await fetch(`${tracksEndPoint}?limit=${limit}`, {
+
+    const _getPlaylistItems = async (token, playlistId, limit) => {
+        const result = await fetch(`https://api.spotify.com/v1/playlists/${playlistId}/tracks?limit=${limit}`, {
             method: 'GET',
             headers: { 'Authorization' : 'Bearer ' + token}
         });
@@ -30,10 +32,8 @@ const APIController = (function() {
         return data.items;
     }
 
-    const _getRecommendations = async(token, tracksArray, limit) => {
+    const _getRecommendations = async(token, seedTracks, limit) => {
         console.log('getting recommendations...')
-
-        let seedTracks = tracksArray.map(a => a.track.id) 
     
         const emotion = document.querySelector('#hiddenemotion').value;
         let minValence = 0;
@@ -73,15 +73,14 @@ const APIController = (function() {
         getToken() {
             return _getToken();
         },
-        getTracks(token, tracksEndPoint, limit) {
-            return _getTracks(token, tracksEndPoint, limit);
+        getPlaylistItems(token, playlistId, limit) {
+            return _getPlaylistItems(token, playlistId, limit);
         },
-        getRecommendations(token, trackEndPoint, limit){
-            return _getRecommendations(token, trackEndPoint, limit);
+        getRecommendations(token, seedTracks, limit){
+            return _getRecommendations(token, seedTracks, limit);
         }
     }
 })();
-
 
 // UI Module
 const UIController = (function() {
@@ -145,12 +144,13 @@ const APPController = (function(UICtrl, APICtrl) {
         const token = await APICtrl.getToken(); 
            
         // set the track endpoint
-        const tracksEndpoint = "https://api.spotify.com/v1/playlists/37i9dQZF1DXcBWIGoYBM5M/tracks"
+        const playlistId = "37i9dQZF1DXcBWIGoYBM5M"
         
         // get the list of tracks
-        const tracks = await APICtrl.getTracks(token, tracksEndpoint, 5);
+        const tracks = await APICtrl.getPlaylistItems(token, playlistId, 5);
+        let seedTracks = tracks.map(a => a.track.id) 
 
-        const recommendedTrack = await APICtrl.getRecommendations(token, tracks, 1);
+        const recommendedTrack = await APICtrl.getRecommendations(token, seedTracks, 1);
         UICtrl.createTrackDetail(recommendedTrack.album.images[2].url, 
             recommendedTrack.name, recommendedTrack.artists[0].name);
     });
