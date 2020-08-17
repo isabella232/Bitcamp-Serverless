@@ -6,7 +6,7 @@ Click into your app and record the **Client Id** and **Client Secret**.
 
 
 
-Before the actual programming, here's a quick overview of how the project is structured. We're going to be using the **module pattern** in javascript, which kind of mimics **classes** in OOP languages like Java. 
+Before the actual programming, here's a quick overview of how the project is structured. We're going to be using the **revealing module pattern** in javascript, which kind of mimics **classes** in OOP languages like Java. 
 
 
 
@@ -69,7 +69,7 @@ Essentially, just remember that modules:
   - prevents variables from polluting global scope
 - are IIFEs- so they must be declared with function expressions and two sets of parentheses
 
-
+For more reading, check out [this](https://addyosmani.com/resources/essentialjsdesignpatterns/book/#revealingmodulepatternjavascript) excerpt on the revealing module pattern.
 
 In this project, we're going to have two separate modules that handle distinct concerns– one called `APIController`for handling API calls and the other called `UIController `for handling our HTML input fields.  A third module, called `APPController`,  will handle the actually retrieving and displaying the data. Each module will have public methods that the `APPController`  will call.
 
