@@ -49,7 +49,7 @@ Anything declared in an IIFE is not visible to the global scope, meaning that so
 
 In this project, we're going to have two separate modules that handle distinct concerns– one called `APIController`for handling API calls and the other called `UIController `for handling our HTML input fields.  A third module, called `APPController`,  will handle the actually retrieving and displaying the data. Each module will have public methods that the `APPController`  will call.
 
-![Screen Shot 2020-08-16 at 5.46.14 PM](/Users/Natalie/Desktop/Screen Shot 2020-08-16 at 5.46.14 PM.png)
+![modules](images/modules.png)
 
 
 
