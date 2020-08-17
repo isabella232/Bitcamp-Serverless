@@ -6,17 +6,25 @@ Click into your app and record the **Client Id** and **Client Secret**.
 
 
 
-Before the actual programming, here's a quick overview of how the project is structured. We're going to be using the **module pattern** in javascript, which kind of mimicks **classes** in OOP languages like Java. Kind of. 
-
-**Basics:**
-
-- allows encapsulation and separation of private/public variables and methods
-- better organization and separation of concerns
-- implemented with Closures and IIFEs
+Before the actual programming, here's a quick overview of how the project is structured. We're going to be using the **module pattern** in javascript, which kind of mimics **classes** in OOP languages like Java. 
 
 
 
-Let's take a look at an example:
+Watch [this video](https://www.youtube.com/watch?v=pOfwp6VlnlM), which gives a brief overview of this concept.
+
+
+
+Let's take a look at an example of a module:
+
+
+
+Notice that there are parentheses around the function– this indicates that it is an **expression** and should be evaluated first. So remember:
+
+The **first** set of parentheses evaluate the function.
+
+The **second** set of parentheses call the function.
+
+So, the function is essentially declared and run immediately. This is called an **IIFE**, or immediately invoked function expression.
 
 ```js
 const car = (function(){
@@ -29,21 +37,37 @@ const car = (function(){
 })();
 ```
 
-The variable speed is available only within the scope of the function, so it can't be accessed from the outside environment. However, it can be changed through the use of a **Closure**. A Closure in Javascript is an inner function that has access to the variables of its outer function. In this case, our outer function is returning the function `forward`,  which allows us to change the value of private variable `speed`  without allowing us direct access. 
+
+
+Also notice that because the variable `speed`  was declared within this function, it acts as a **private** variable and can't be accessed outside of the function. However, returning the method `forward` allows us to change the value of speed indirectly. This is how modules enable us to **encapsulate** private variables or methods and reveal other ones through returning them.
+
+```js
+//doesn't work!
+car.speed = 101;
+
+//works
+car.forward();
+```
 
 
 
-Watch [this]([https://egghead.io/lessons/javascript-the-module-pattern-in-javascript-aka-immediately-invoked-function-expression-aka-iife#:~:text=Search%20Catalog-,The%20Module%20Pattern%20in%20Javascript%20(aka%20Immediately,Invoked%20Function%20Expression%20aka%20IIFE)&text=Javascript%20modules%20are%20a%20design,into%20smaller%20self%20managing%20pieces.](https://egghead.io/lessons/javascript-the-module-pattern-in-javascript-aka-immediately-invoked-function-expression-aka-iife#:~:text=Search Catalog-,The Module Pattern in Javascript (aka Immediately,Invoked Function Expression aka IIFE)&text=Javascript modules are a design,into smaller self managing pieces.) video to see an example of using the module pattern to make a calculator.
+Also notice that the method `forward`  does not exist globally. It must be called with a reference to `car`. 
+
+```js
+//doesn't work
+forward();
+
+//works
+car.forward();
+```
 
 
 
-Also notice that the function declaration is surrounded by parentheses, with another pair at the end of the declaration. This makes the function an IIFE, or **Immediately-invoked Function Expression**. IIFEs are that defined as expressions and executed immediately after creation. The first pair of parentheses, which wrap the function, indicate an expression. In Javascript, expressions evaluate to a single value, which in this case is our actual function. To call the function immediately, we add the second pair of parentheses `();`,  like how you would call an normal function. 
+Essentially, just remember that modules:
 
-
-
-Anything declared in an IIFE is not visible to the global scope, meaning that something like the `forward`  function we returned can only be accessed through the const `car`.  This practice allows us to contain all relevant methods to `car`  within in its own scope and also avoid polluting the global scope with variables that are only being used in one place.
-
-
+- keep all variables and methods private unless explicitly revealed(in return)
+  - prevents variables from polluting global scope
+- are IIFEs- so they must be declared with function expressions and two sets of parentheses
 
 
 
@@ -71,4 +95,8 @@ const APPController = (function(UICtrl, APICtrl) {
 })(UIController, APIController);
 
 ```
+
+
+
+
 
