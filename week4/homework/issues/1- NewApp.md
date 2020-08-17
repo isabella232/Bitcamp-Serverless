@@ -39,7 +39,7 @@ const car = (function(){
 
 
 
-Also notice that because the variable `speed`  was declared within this function, it acts as a **private** variable and can't be accessed outside of the function. However, returning the method `forward` allows us to change the value of speed indirectly. This is how modules enable us to **encapsulate** private variables or methods and reveal other ones through returning them.
+Also notice that because the variable `speed`  was declared within this function, it acts as a **private** variable and can't be accessed outside of the function. However, returning the method `forward` allows us to change the value of speed indirectly. **Important! All methods/variables are private unless included in the return object**. This is how modules enable us to **encapsulate** private variables or methods and reveal other ones through returning them.
 
 ```js
 //doesn't work!
