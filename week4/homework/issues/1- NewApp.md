@@ -41,7 +41,7 @@ Also notice that the function declaration is surrounded by parentheses, with ano
 
 
 
-Anything declared in an IIFE is not visible to the global scope, meaning that something like the `forward`  function we returned can only be accessed through the const `car`.  This practice allows us to contain all relevant methods to `car`  within in its own scope and also avoid polluting the global scope with variables that are only being used in one place.
+Anything declared in an IIFE is not visible to the global scope, meaning that something like the `forward`  function we returned can only be accessed through the const `car`.  This practice allows us to contain all relevant methods to `car`  within in its own scope and also avoid polluting the global scope with variables that are only being used in one place. Read [this](https://medium.com/@vvkchandra/essential-javascript-mastering-immediately-invoked-function-expressions-67791338ddc6) article for more detail.
 
 
 
