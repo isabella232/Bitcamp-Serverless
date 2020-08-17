@@ -11,8 +11,8 @@ Use the information in the Authorization Guide to fill in the necessary fields. 
 Hint: use these variables in the `Authorization`  section of your http request.
 
 <details>
-  <summary>Bigger Hint:</summary>
-  ![modules](images/clientflow.png)
+  <summary>Click for bigger hint:</summary>
+  <img src=images/clientflow.png>
 
 </details>
 
