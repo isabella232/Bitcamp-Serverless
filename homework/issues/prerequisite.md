@@ -7,7 +7,9 @@ Before the program starts, please find sometime to complete the following assign
 Your task for Week 0 is to learn/review JavaScript fundamentals that will later be used in the program. To complete this assignment, you will be creating a digital clock using JavaScript to demonstrate your skills! If you need any help, refer to these resources:
 
 W3Schools: https://www.w3schools.com/js/default.asp
+
 Tutorialspoint: https://www.tutorialspoint.com/javascript/javascript_overview.htm
+
 Modern JS: https://javascript.info/
 
 If you have specific questions, try out Stack Overflow (it is super duper helpful):
