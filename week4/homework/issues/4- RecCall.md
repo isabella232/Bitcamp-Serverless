@@ -37,9 +37,13 @@ const _getRecommendations = async(token, seedTracks, limit) => {
 
 ```
 
+<br />
+<br />
 
 
 The last part of the `_getRecommendations`  function is to make the fetch call. The only thing you have to add  here is the recommendations endpoint and the parameter string. Again, the documentation for this endpoint is [here](https://developer.spotify.com/documentation/web-api/reference/browse/get-recommendations/). 
+
+<br />
 
 Hint: Look back on your Face API call to see how we can add a parameter string.
 
@@ -54,6 +58,9 @@ Hint: Look back on your Face API call to see how we can add a parameter string.
     }
   ```
 </details>
+
+<br />
+
 
 ```js
 const result = await fetch('<API ENDPOINT + PARAM STRING>', {
