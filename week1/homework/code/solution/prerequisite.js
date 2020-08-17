@@ -1,15 +1,15 @@
 // HTML: make sure to include: <body onload="startTime()">
 
-/* <div id="clockdate">
+<div id="clockdate">
   <div class="clockdate-wrapper">
     <div id="clock"></div>
     <div id="date"></div>
   </div>
-</div> */
+</div>
 
 // CSS
 
-/* .clockdate-wrapper {
+.clockdate-wrapper {
     background-color: #333;
     padding:25px;
     max-width:350px;
@@ -39,7 +39,7 @@
     font-size:14px;
     font-family:arial,sans-serif;
     color:#fff;
-} */
+}
 
 // JavaScript: the main function using date objects ie. getHours, getMinutes, getSeconds, etc...
 
