@@ -18,7 +18,7 @@ If you have specific questions, try out Stack Overflow (it is super duper helpfu
 
 Stack Overflow: https://stackoverflow.com/
 
-After you have learned/refreshed your knowledge of JavaScript, let's get started on making that clock! Here is the list of the requirements and some fun extensions you can complete if you have extra time!
+After you have learned/refreshed your knowledge of JavaScript, let's get started on making that clock. Here is the list of the requirements and some extensions you can complete if you have extra time!
 
 **Requirements:**
 
