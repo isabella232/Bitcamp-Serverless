@@ -8,7 +8,7 @@ Inside the APIController module, we're going to write a private method called `_
 
 **Use the information in the Authorization Guide**([link again](https://developer.spotify.com/documentation/general/guides/authorization-guide/#client-credentials-flow)) to fill in the necessary fields. Notice also that we've declared variables for the client ID and secret that you received when you registered the app. 
 
-Hint: use these variables in the `Authorization`  section of your http request.
+Hint: use `clientId` and `clientSecret` in the `Authorization`  section of your http request.
 
 <details>
 	<summary><strong>Click for bigger hint:</strong> </summary>
