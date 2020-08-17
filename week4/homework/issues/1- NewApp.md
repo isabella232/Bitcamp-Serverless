@@ -33,7 +33,7 @@ The variable speed is available only within the scope of the function, so it can
 
 
 
-Watch [this]([https://egghead.io/lessons/javascript-the-module-pattern-in-javascript-aka-immediately-invoked-function-expression-aka-iife#:~:text=Search%20Catalog-,The%20Module%20Pattern%20in%20Javascript%20(aka%20Immediately,Invoked%20Function%20Expression%20aka%20IIFE)&text=Javascript%20modules%20are%20a%20design,into%20smaller%20self%20managing%20pieces.](https://egghead.io/lessons/javascript-the-module-pattern-in-javascript-aka-immediately-invoked-function-expression-aka-iife#:~:text=Search Catalog-,The Module Pattern in Javascript (aka Immediately,Invoked Function Expression aka IIFE)&text=Javascript modules are a design,into smaller self managing pieces.) video to see an example of using the module pattern to make a calculator.
+Watch [this](https://egghead.io/lessons/javascript-the-module-pattern-in-javascript-aka-immediately-invoked-function-expression-aka-iife#:~:text=Search%20Catalog-,The%20Module%20Pattern%20in%20Javascript%20(aka%20Immediately,Invoked%20Function%20Expression%20aka%20IIFE)&text=Javascript%20modules%20are%20a%20design,into%20smaller%20self%20managing%20pieces.) video to see an example of using the module pattern to make a calculator.
 
 
 
