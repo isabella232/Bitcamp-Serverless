@@ -76,6 +76,7 @@ Essentially, just remember that modules:
 
 <br />
 <br />
+
 For more reading, check out [this](https://addyosmani.com/resources/essentialjsdesignpatterns/book/#revealingmodulepatternjavascript) excerpt on the revealing module pattern.
 
 <br />
