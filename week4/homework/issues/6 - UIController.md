@@ -20,6 +20,8 @@ There isn't a whole lot this module has to do since our app literally only has t
 
 What we do need to add is a reference to the id of html elements that we will need to alter or listen to during runtime. The two elements are the **Find Song** button(it has the id `song-button`) and the `#song-detail`  html div that displays the actual song recommendation. 
 
+<br />
+
 Notice that variables `submit`  and `divSongDetail`  only store the html **id**, not a reference to the actual object.
 
 ```js
@@ -44,6 +46,8 @@ Two objects here:
 2. `createTrackDetail`-  this method creates a html div where the image, title, and artist of the recommended song is displayed
 
 
+<br />
+
 
 Task: add a line of code at the end of  `createTrackDetail`  that inserts the string `html`  into `detailDiv`.
 
@@ -51,6 +55,7 @@ Use the function `insertAdjacentHTML()`[(documentation here)](https://developer.
 
 Note: you could also do this with `Element.innerHTML`  but in the case that we need to display more than one song, `insertAdjacentHTML()`   allows that.
 
+<br/>
 
 
 ```js
