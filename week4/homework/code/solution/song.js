@@ -14,11 +14,13 @@ const APIController = (function() {
                 'Authorization' : 'Basic ' + btoa(clientId + ':' + clientSecret)
             },
             body: 'grant_type=client_credentials'
+
         });
 
         const data = await result.json();
         return data.access_token;
     }
+
 
     const _getPlaylistItems = async (token, playlistId, limit) => {
         const result = await fetch(`https://api.spotify.com/v1/playlists/${playlistId}/tracks?limit=${limit}`, {
@@ -45,11 +47,11 @@ const APIController = (function() {
             minValence = .66;
         }
         else{
-            minValence = .3;
-            maxValence = .7;
+            minValence = .33;
+            maxValence = .66;
         }
 
-        let payload = new URLSearchParams({
+        let params = new URLSearchParams({
             'min_popularity': '70',
             'limit': `${limit}`,
             'seed_tracks': `${seedTracks}`,
@@ -58,7 +60,7 @@ const APIController = (function() {
         })
   
         const result = await fetch
-        (`https://api.spotify.com/v1/recommendations?` + payload.toString(), {
+        (`https://api.spotify.com/v1/recommendations?` + params.toString(), {
             method: 'GET',
             headers: { 'Authorization' : 'Bearer ' + token}
         });
@@ -85,20 +87,17 @@ const UIController = (function() {
 
     //object to hold references to html selectors
     const DOMElements = {
-        buttonSubmit: '#songbutton',
-        divSongDetail: '#song-detail',
-        hfToken: '#hidden_token'
+        button: '#song-button',
+        divSongDetail: '#song-detail'
     }
 
     //public methods
     return {
 
         //method to get input fields
-        inputField() {
-            return {
-                submit: document.querySelector(DOMElements.buttonSubmit),
-                songDetail: document.querySelector(DOMElements.divSongDetail)
-            }
+        inputField: {
+            songButton: document.querySelector(DOMElements.button),
+            songDetail: document.querySelector(DOMElements.divSongDetail)   
         },
      
         // need method to create the song detail
@@ -111,13 +110,10 @@ const UIController = (function() {
             const html = 
             `
             <div class="songdisplay">
-                <img src="${img}" alt="">        
-            </div>
-            <div class="songdisplay">
-                <label for="Genre" class="form-label col-sm-12">${title}</label>
-            </div>
-            <div class="display">
-                <label for="artist" class="form-label col-sm-12">By: ${artist}</label>
+                <img src="${img}" alt="">     
+                <br />           
+                ${title}- ${artist}
+
             </div> 
             `;
 
@@ -131,12 +127,13 @@ const UIController = (function() {
 const APPController = (function(UICtrl, APICtrl) {
 
     // get input field object ref
-    const DOMInputs = UICtrl.inputField();
-
+    const DOMInputs = UICtrl.inputField;
+    
+    const buttonElement = DOMInputs.songButton
     // create submit button click event listener
-    DOMInputs.submit.addEventListener('click', async (e) => {
+    buttonElement.addEventListener('click', async (event) => {
         // prevent page reset
-        e.preventDefault();
+        event.preventDefault();
         
         //get the token
         const token = await APICtrl.getToken(); 
@@ -146,7 +143,10 @@ const APPController = (function(UICtrl, APICtrl) {
         
         // get the list of tracks
         const tracks = await APICtrl.getPlaylistItems(token, playlistId, 5);
+
+        //get the list of track ids
         let seedTracks = tracks.map(a => a.track.id) 
+
 
         const recommendedTrack = await APICtrl.getRecommendations(token, seedTracks, 1);
         UICtrl.createTrackDetail(recommendedTrack.album.images[2].url, 
