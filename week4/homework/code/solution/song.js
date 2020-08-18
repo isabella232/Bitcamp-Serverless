@@ -14,13 +14,11 @@ const APIController = (function() {
                 'Authorization' : 'Basic ' + btoa(clientId + ':' + clientSecret)
             },
             body: 'grant_type=client_credentials'
-
         });
 
         const data = await result.json();
         return data.access_token;
     }
-
 
     const _getPlaylistItems = async (token, playlistId, limit) => {
         const result = await fetch(`https://api.spotify.com/v1/playlists/${playlistId}/tracks?limit=${limit}`, {
