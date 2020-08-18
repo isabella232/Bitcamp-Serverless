@@ -63,9 +63,8 @@ const APPController = (function(UICtrl, APICtrl) {
     //create submit button click event listener
     const buttonElement = DOMInputs.songButton;
     buttonElement.addEventListener('click', async(event) => {
-      
-	//TODO: call the getToken function using a reference to APICtrl
-      	const token = <CALL THE FUNCTION HERE>
+    	//TODO: call the getToken function using a reference to APICtrl
+      	const token = '<CALL THE FUNCTION HERE>'
     });
 
 })(UIController, APIController); 
@@ -90,14 +89,14 @@ const APPController = (function(UICtrl, APICtrl) {
     const buttonElement = DOMInputs.songButton;
     buttonElement.addEventListener('click', async(event) => {
 				
-      	const token = <VALID TOKEN CALL>
+      	const token = '<VALID TOKEN CALL>';
           
         // did this for you- this is the playlist id of Top 50 Hits
-        const playlistId = "37i9dQZF1DXcBWIGoYBM5M"
+        const playlistId = "37i9dQZF1DXcBWIGoYBM5M";
         
         // TODO- call getPlaylistItems to get 5 tracks with appropriate params
         // REMEMBER TO USE AWAIT!
-        const tracks = <CALL THE FUNCTION HERE>;
+        const tracks = '<CALL THE FUNCTION HERE>';
     });
 
 })(UIController, APIController); 
@@ -120,9 +119,9 @@ const APPController = (function(UICtrl, APICtrl) {
 	// create submit button click event listener
 	const buttonElement = DOMInputs.songButton;
 	buttonElement.addEventListener('click', async(event) => {
-		const token = <VALID TOKEN CALL>
+		const token = '<VALID TOKEN CALL>';
 		const playlistId = "37i9dQZF1DXcBWIGoYBM5M"  
-		const tracks = <VALID TRACK CALL>;
+		const tracks = '<VALID TRACK CALL>';
 
 
 		//seedTracks is declared for you- this is just an array of the IDs of the 5 tracks we just received
@@ -131,7 +130,7 @@ const APPController = (function(UICtrl, APICtrl) {
 
 		//TODO: call getRecommendations to get 1 track
 		//USE AWAIT
-		const recommendedTrack = <CALL FUNCTION HERE>
+		const recommendedTrack = '<CALL FUNCTION HERE>'
 
 		//creating a new trackDetail to display the song  
 		UICtrl.createTrackDetail(recommendedTrack.album.images[2].url, 
