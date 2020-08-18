@@ -84,9 +84,10 @@ Let's create the eventListener:
 
 
 ```js
-// create submit button click event listener
+//TODO: create submit button click event listener
 const buttonElement = '<set this to the songButton using DOMInputs! >'
 
+//this adds the eventListener
 buttonElement.addEventListener('click', async(event) => {
 
 });
