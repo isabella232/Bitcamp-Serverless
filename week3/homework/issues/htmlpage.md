@@ -14,7 +14,7 @@ W3Schools (CSS): https://www.w3schools.com/css/default.asp
 
 <br />
 
-Here's a list of HTML items you need to create(please use the id's specified)
+Here's a list of HTML items you need to create (please use the id's specified)
 
 1.  `header` element that says anything you want.. mine says **Example Project**
 2. `div`  element with id `container`  that will surround **all** of your elements.
