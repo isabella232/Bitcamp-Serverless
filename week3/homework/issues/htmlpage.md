@@ -12,7 +12,7 @@ W3Schools (CSS): https://www.w3schools.com/css/default.asp
 
 
 
-From the top, you should have a title. You can do this using a `<h3>` tag and a simple wrapper to center the text. Then you should have your main "container". A container is a div that includes everything within a certain area. It makes it easier to center and stylize everything. Next, you should have a `<form>` tag that takes in a image (make sure to reference an ID and `onsubmit = ""` so we can later link it with some JavaScript). Inside of the form, create a `<input>` tag that takes in an image. Afterwards, we also need to add a few output div(s) so we can display the image's emotion data and user's recommended song(s). We can do this by creating empty div(s) with some given ID. Oh also, a submit button would also be helpful...
+From the top, you should have a title. You can do this using a `<h3>` tag and a simple wrapper to center the text. Then you should have your main "container". A container is a div that includes everything within a certain area. It makes it easier to center and stylize everything. Next, you should have a `<form>` tag that takes in a image (make sure to reference an ID and `onsubmit = ""` so we can later link it with some JavaScript). Inside of the form, create a `<input>` tag that takes in an image. Then create an image output div so the user can see the image the uploadede. Afterwards, we also need to add a few output div(s) so we can display the image's emotion data and user's recommended song(s). We can do this by creating empty div(s) with some given ID. Oh also, a submit button would also be helpful...
 
 
 
