@@ -5,14 +5,14 @@ Your code should look something like this:
 ```js
 const APPController = (function(UICtrl, APICtrl) {
 
-    // get input field object ref
-    const DOMInputs = UICtrl.inputField;
-    
-    // create submit button click event listener
-  	const buttonElement = DOMInputs.songButton;
-    buttonElement.addEventListener('click', async (event) => {
+	// get input field object ref
+	const DOMInputs = UICtrl.inputField;
 
-    });
+	// create submit button click event listener
+	const buttonElement = DOMInputs.songButton;
+	buttonElement.addEventListener('click', async (event) => {
+
+	});
 
 })(UIController, APIController);
 ```
@@ -44,7 +44,7 @@ Step 1:  call getToken
 
 Hint: remember that we need to reference APICtrl to access getToken! Maybe something like 
 
-`APICtrl.<funcName>`.
+`APICtrl.<funcName>`
 
 **ALSO!! ALL THE API-RELATED FUNCTIONS ARE ASYNC AND NEED TO BE CALLED WITH THE AWAIT KEYWORD BEFORE**   soooo... `await APICtrl.<funcName>`
 
@@ -57,15 +57,14 @@ Hint: remember that we need to reference APICtrl to access getToken! Maybe somet
 ```js
 const APPController = (function(UICtrl, APICtrl) {
 
-    // get input field object ref
+    //get input field object ref
     const DOMInputs = UICtrl.inputField;
     
-    // create submit button click event listener
-  	const buttonElement = DOMInputs.songButton;
+    //create submit button click event listener
+    const buttonElement = DOMInputs.songButton;
     buttonElement.addEventListener('click', async(event) => {
-      
-				//TODO: call the getToken function using a reference to APICtrl
-      	const token = <CALL THE FUNCTION HERE>
+    	//TODO: call the getToken function using a reference to APICtrl
+      	const token = '<CALL THE FUNCTION HERE>'
     });
 
 })(UIController, APIController); 
@@ -87,17 +86,17 @@ const APPController = (function(UICtrl, APICtrl) {
     const DOMInputs = UICtrl.inputField;
     
     // create submit button click event listener
-  	const buttonElement = DOMInputs.songButton;
+    const buttonElement = DOMInputs.songButton;
     buttonElement.addEventListener('click', async(event) => {
 				
-      	const token = <VALID TOKEN CALL>
+      	const token = '<VALID TOKEN CALL>';
           
         // did this for you- this is the playlist id of Top 50 Hits
-        const playlistId = "37i9dQZF1DXcBWIGoYBM5M"
+        const playlistId = "37i9dQZF1DXcBWIGoYBM5M";
         
         // TODO- call getPlaylistItems to get 5 tracks with appropriate params
         // REMEMBER TO USE AWAIT!
-        const tracks = <CALL THE FUNCTION HERE>;
+        const tracks = '<CALL THE FUNCTION HERE>';
     });
 
 })(UIController, APIController); 
@@ -114,29 +113,29 @@ Step 3: call `getRecommendations(token, seedTracks, limit)`
 ```js
 const APPController = (function(UICtrl, APICtrl) {
 
-    // get input field object ref
-    const DOMInputs = UICtrl.inputField;
-    
-    // create submit button click event listener
-  	const buttonElement = DOMInputs.songButton;
-    buttonElement.addEventListener('click', async(event) => {
-      	const token = <VALID TOKEN CALL>
-        const playlistId = "37i9dQZF1DXcBWIGoYBM5M"  
-        const tracks = <VALID TRACK CALL>;
-        
-        
-        //seedTracks is declared for you- this is just an array of the IDs of the 5 tracks we just received
-        let seedTracks = tracks.map(a => a.track.id) 
+	// get input field object ref
+	const DOMInputs = UICtrl.inputField;
 
-       
-        //TODO: call getRecommendations to get 1 track
-        //USE AWAIT
-        const recommendedTrack = <CALL FUNCTION HERE>
-          
-        //creating a new trackDetail to display the song  
-        UICtrl.createTrackDetail(recommendedTrack.album.images[2].url, 
-            recommendedTrack.name, recommendedTrack.artists[0].name);
-    });
+	// create submit button click event listener
+	const buttonElement = DOMInputs.songButton;
+	buttonElement.addEventListener('click', async(event) => {
+		const token = '<VALID TOKEN CALL>';
+		const playlistId = "37i9dQZF1DXcBWIGoYBM5M"  
+		const tracks = '<VALID TRACK CALL>';
+
+
+		//seedTracks is declared for you- this is just an array of the IDs of the 5 tracks we just received
+		let seedTracks = tracks.map(a => a.track.id) 
+
+
+		//TODO: call getRecommendations to get 1 track
+		//USE AWAIT
+		const recommendedTrack = '<CALL FUNCTION HERE>'
+
+		//creating a new trackDetail to display the song  
+		UICtrl.createTrackDetail(recommendedTrack.album.images[2].url, 
+		    recommendedTrack.name, recommendedTrack.artists[0].name);
+	});
 
 })(UIController, APIController); 
 ```
