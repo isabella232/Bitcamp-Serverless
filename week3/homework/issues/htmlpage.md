@@ -21,7 +21,7 @@ Here's a list of HTML items you need to create(please use the id's specified)
     1. empty `div`  with id `hidden-emotion`  and type `hidden`.  This is going to hold but not display the emotion data we receive from Face API.
     2. `form`  element with id `image-form`.  Also specify  `onsubmit="handle(event)"`.  Set the `enctype`  attribute to `multipart/form-data`.  <-- Remember that for forms that receive file uploads, we need to specify this type of encoding.  
     
-        * (next three elements are in the form element): `input`  element that allows a file upload, where the user will upload an image. [This link](https://www.w3schools.com/html/html_form_input_types.asp) could be helpful. Set the `onChange`  attribute to `"loadFile(event)"`. Use the `accept`  attribute to only allow image submissions.
+        * (next three elements are in the form element): `input`  element that allows a file upload, where the user will upload an image. [This link](https://www.w3schools.com/html/html_form_input_types.asp) could be helpful. Set the `onChange`  attribute to `"loadFile(event)"`. Use the `accept`  attribute to only allow image submissions. Finally, set the `name` attribute to `image`.
         
         * `img`  element with id `output`-  this is going to display the image that the user selects
         * `button`  element with the `type`  attribute set to `submit`.  The text inside should say Submit Picture  or something similar. This will submit the image.
