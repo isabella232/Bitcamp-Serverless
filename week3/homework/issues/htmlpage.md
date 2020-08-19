@@ -16,7 +16,7 @@ W3Schools (CSS): https://www.w3schools.com/css/default.asp
 
 Here's a list of HTML items you need to create (please use the id's specified)
 
-1.  `header` element that says anything you want.. mine says **Example Project**
+1.  `header` element that says anything you want... mine says **Example Project**
 2. `div`  element with id `container`  that will surround **all** of your elements.
     1. empty `div`  with id `hidden-emotion`  and type `hidden`.  This is going to hold but not display the emotion data we receive from Face API.
     2. `form`  element with id `image-form`.  Also specify  `onsubmit="handle(event)"`.  Set the `enctype`  attribute to `multipart/form-data`.  <-- Remember that for forms that receive file uploads, we need to specify this type of encoding.  
