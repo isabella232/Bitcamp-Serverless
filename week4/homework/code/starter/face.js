@@ -8,7 +8,7 @@ async function handle(event){
     $('#emotion').html('Loading...');
     event.preventDefault();
 
-    var myform = document.getElementById('myform');
+    var myform = document.getElementById('image-form');
     var payload = new FormData(myform);
 
     const resp = await fetch(config.functionUrl, {
@@ -46,8 +46,6 @@ async function handle(event){
     }
     
     $('#emotion').html(resultString);
-
-    var hiddenEmotion = document.querySelector('#hidden-emotion');
-    hiddenEmotion.value = valence;
+    $('#hidden-emotion').html(valence);
 
 }
