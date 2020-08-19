@@ -2,7 +2,7 @@
 
 After watching the live demo, you should know the basics of how to create a simple website using the coding language HTML and some CSS if you want your webpage to look fancy. Now, your task is to create your own HTML page that inputs an image using a `<form>` and outputs the image's emotion data and the user's recommended song.
 
-
+<br />
 
 If you still need some help learning HTML and CSS, checkout these resources:
 
