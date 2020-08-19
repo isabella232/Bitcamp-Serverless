@@ -18,23 +18,6 @@ From the top, you should have a title. You can do this using a `<h3>` tag and a 
 
 Here are some hints and code snippets for getting started!
 
-
-
-To start off your HTML page, add:
-
-```html
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
-   </head>
-</html>
-```
-
 To create a form, use the form tag and a few labels:
 
 ```html
