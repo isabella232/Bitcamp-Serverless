@@ -1,4 +1,4 @@
-## Downloading an IDE, Configuring Azure, and Learning GitHub
+## Learning GitHub
 
 *For this assignment, you will follow the instructions and at the end, complete a task showing your knowledge of the subject. If at any moment you need help, feel free to contact your TAs.*
 
