@@ -6,15 +6,17 @@ After watching the live demo, you should know the basics of how to create a simp
 
 If you still need some help learning HTML and CSS, checkout these resources:
 
+<br />
+
 W3Schools (HTML): https://www.w3schools.com/html/default.asp
 
 W3Schools (CSS): https://www.w3schools.com/css/default.asp
 
-
+<br />
 
 From the top, you should have a title. You can do this using a `<h3>` tag and a simple wrapper to center the text. Then you should have your main "container". A container is a div that includes everything within a certain area. It makes it easier to center and stylize everything. Next, you should have a `<form>` tag that takes in a image (make sure to reference an ID and `onsubmit = ""` so we can later link it with some JavaScript). Inside of the form, create a `<input>` tag that takes in an image. Then create an image output div so the user can see the image the uploadede. Afterwards, we also need to add a few output div(s) so we can display the image's emotion data and user's recommended song(s). We can do this by creating empty div(s) with some given ID. Oh also, a submit button would also be helpful...
 
-
+<br />
 
 Here are some hints and code snippets for getting started!
 
@@ -46,6 +48,8 @@ Lastly, make sure to reference jQuery and any other libraries we used (JS bootst
     <script src="song.js" type="text/javascript"></script>
     <script src="face.js" type="text/javascript"></script>
 ```
+
+<br />
 
 After that, you're done with the frontend. It's time to use JavaScript!
 
