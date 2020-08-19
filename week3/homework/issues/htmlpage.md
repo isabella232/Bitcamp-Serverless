@@ -47,10 +47,10 @@ Then to create an image input, use the `type="file"` and `accept=""` modifiers:
 <input type="file" accept="" name="" id="" onchange=""/>
 ```
 
-We need to create two more things. An image output that allows the user to see the image they chose and a few spare div(s) with unique id(s) we can use to display the image's emotion data and user's recommended song(s).
+We need to create two more things. An image output that allows the user to see the image they chose and a few spare div(s) with unique id(s) we can use to display the image's emotion data and user's recommended song(s). Make sure to create a `<div>` called "hidden-emotion", we use it later on.
 
 ```html
-<div id="uniqueName0"> <div id="uniqueName1"> <button id="" type ="submit">
+<div id="hidden-emotion"> <button id="" type ="submit">
 ```
 
 Lastly, make sure to reference jQuery and any other libraries we used (JS bootstrap):
