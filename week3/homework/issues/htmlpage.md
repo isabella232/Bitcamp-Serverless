@@ -14,36 +14,38 @@ W3Schools (CSS): https://www.w3schools.com/css/default.asp
 
 <br />
 
-From the top, you should have a title. You can do this using a `<h3>` tag and a simple wrapper to center the text. Then you should have your main "container". A container is a div that includes everything within a certain area. It makes it easier to center and stylize everything. Next, you should have a `<form>` tag that takes in a image (make sure to reference an ID and `onsubmit = ""` so we can later link it with some JavaScript). Inside of the form, create a `<input>` tag that takes in an image. Then create an image output div so the user can see the image the uploadede. Afterwards, we also need to add a few output div(s) so we can display the image's emotion data and user's recommended song(s). We can do this by creating empty div(s) with some given ID. Oh also, a submit button would also be helpful...
+Here's a list of HTML items you need to create(please use the id's specified)
+
+1.  `header` element that says anything you want.. mine says **Example Project**
+2. `div`  element with id `container`  that will surround **all** of your elements.
+    1. empty `div`  with id `hidden-emotion`  and type `hidden`.  This is going to hold but not display the emotion data we receive from Face API.
+    2. `form`  element with id `image-form`.  Also specify  `onsubmit="handle(event)"`.  Set the `enctype`  attribute to `multipart/form-data`.  <-- Remember that for forms that receive file uploads, we need to specify this type of encoding.  
+    
+        * (next three elements are in the form element): `input`  element that allows a file upload, where the user will upload an image. [This link](https://www.w3schools.com/html/html_form_input_types.asp) could be helpful. Set the `onChange`  attribute to `"loadFile(event)"`. Use the `accept`  attribute to only allow image submissions.
+        
+        * `img`  element with id `output`-  this is going to display the image that the user selects
+        * `button`  element with the `type`  attribute set to `submit`.  The text inside should say Submit Picture  or something similar. This will submit the image.
+        
+   3. (Out of the form element now): empty `div`  with the id `emotion`.  This is where the emotion analysis results will be displayed.
+   4. `button`  with id `song-button`  that says something like **Find Song**.
+   5. Empty `div`  with id `song-detail`.  The song recommendation will be shown here.
+
+
+
+  
 
 <br />
 
-Here are some hints and code snippets for getting started!
+<br />
 
-To create a form, use the form tag and a few labels:
 
-```html
-<form id="" onsubmit="" enctype=""/>
-```
 
-Then to create an image input, use the `type="file"` and `accept=""` modifiers:
+Lastly, make sure to reference jQuery:
 
 ```html
-<input type="file" accept="" name="" id="" onchange=""/>
-```
-
-We need to create two more things. An image output that allows the user to see the image they chose and a few spare div(s) with unique id(s) we can use to display the image's emotion data and user's recommended song(s). Make sure to create a `<div>` called "hidden-emotion", we use it later on.
-
-```html
-<div id="hidden-emotion"> <img id="output">
-```
-
-Lastly, make sure to reference jQuery and any other libraries we used (JS bootstrap):
-
-```html
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
-    <!-- <script src="js/bootstrap.min.js"></script> -->
+     
     <script src="config.js" type="text/javascript"></script>
     <script src="song.js" type="text/javascript"></script>
     <script src="face.js" type="text/javascript"></script>
@@ -52,4 +54,3 @@ Lastly, make sure to reference jQuery and any other libraries we used (JS bootst
 <br />
 
 After that, you're done with the frontend. It's time to use JavaScript!
-
