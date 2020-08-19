@@ -18,7 +18,8 @@ module.exports = async function (context, req) {
 };
 ```
 
-
+<br />
+<br />
 
 We're going to create a new function, outside of  `module.exports`  that will handle analyzing the image(this function is **async** because we will be using the **await** keyword with the API call).  This function is called `analyzeImage(img)`  and takes in one parameter, `img`, that contains the image we're trying to analyze.  Inside, we have two variables involved in the call: `subscriptionKey`  and `uriBase`.  Substitute the necessary values with your own info.
 
@@ -29,7 +30,8 @@ async function analyzeImage(img){
 }
 ```
 
-
+<br />
+<br />
 
 Now, we want to set the parameters of our POST request and specify the exact data that we want.
 
@@ -37,11 +39,11 @@ The documentation for the Face API is [here](https://westus.dev.cognitive.micros
 
 **https://{endpoint}/face/v1.0/detect\[?returnFaceId]\[&returnFaceLandmarks]\[&returnFaceAttributes]\[&recognitionModel]\[&returnRecognitionModel][&detectionModel]**
 
-
+<br />
 
 All of the bracketed sections represent possible request parameters. Read through **Request Parameters** section carefully. How can we specify that we want to get the emotion data?
 
-
+<br />
 
 In order to specify all of our parameters easily, we're going to create a new `URLSearchParams`  object. Here's the object declared for you. I've also already specified one parameter, `returnFaceId`,  as `true` to provide an example. Add in a new parameter that requests emotion.
 
