@@ -8,7 +8,7 @@ At this point, your code should look similar to this:
 const _getRecommendations = async(token, seedTracks, limit) => {
   console.log('getting recommendations...')
 
-  const emotion = document.querySelector('#hiddenemotion').value;
+  const emotion = document.querySelector('#hidden-emotion').value;
   let minValence = 0;
   let maxValence = 1;
 
