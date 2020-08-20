@@ -24,12 +24,12 @@ const _getRecommendations = async(token, seedTracks, limit) => {
   }
 
   let params = new URLSearchParams({
-      'min_popularity': '70',
-      'limit': `${limit}`,
-      'seed_tracks': `${seedTracks}`,
-      'min_valence': `${minValence}`,
-      'max_valence': `${maxValence}`,
-  })
+    'min_popularity': '70',
+    'limit': limit,
+    'seed_tracks': seedTracks,
+    'min_valence': minValence,
+    'max_valence': maxValence
+})
 	
   //API CALL
 }
