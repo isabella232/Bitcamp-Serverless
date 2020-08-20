@@ -80,7 +80,7 @@ Essentially, just remember that modules:
 For more reading, check out [this](https://addyosmani.com/resources/essentialjsdesignpatterns/book/#revealingmodulepatternjavascript) excerpt on the revealing module pattern.
 
 <br />
-In this project, we're going to have two separate modules that handle distinct concerns– one called `APIController`for handling API calls and the other called `UIController `for handling our HTML input fields.  A third module, called `APPController`,  will handle the actually retrieving and displaying the data. Each module will have public methods that the `APPController`  will call.
+In this project, we're going to have two separate modules that handle distinct concerns– one called `APIController` for handling API calls and the other called `UIController` for handling our HTML input fields. A third module, called `APPController`,  will handle the actually retrieving and displaying the data. Each module will have public methods that the `APPController` will call.
 
 ![modules](images/modules.png)
 
