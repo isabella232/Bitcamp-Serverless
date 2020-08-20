@@ -128,6 +128,7 @@ const _getPlaylistItems = async (token, playlistId, limit) => {
   	const queryString = '<QUERY STRING>'
         
         //hint: the api endpoint should include the playlistId parameter somewhere
+	//'https://api.spotify.com/v1/playlists/' + playlistId + '/tracks'
         const result = await fetch('<API ENDPOINT>' + '?' + queryString, {
             method: 'GET',
             headers: { '<HEADER_FIELD>' : '<HEADER VALUE>'}
