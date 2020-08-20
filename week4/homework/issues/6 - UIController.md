@@ -27,8 +27,8 @@ Notice that variables `submit`  and `divSongDetail`  only store the html **id**,
 ```js
 //object to hold references to html selectors
 const DOMElements = {
-  submit: '#song-button',
-  divSongDetail: '#song-detail'
+    button: '#song-button',
+    divSongDetail: '#song-detail'
 }
 ```
 
@@ -65,7 +65,7 @@ return {
 
   //the inputField is an object containing references to the html fields 
    inputField: {
-      songButton: document.querySelector(DOMElements.submit),
+      songButton: document.querySelector(DOMElements.button),
       songDetail: document.querySelector(DOMElements.divSongDetail)
   },
 
