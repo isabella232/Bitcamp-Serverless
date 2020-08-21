@@ -1,6 +1,6 @@
 # Bitcamp-Serverless
 **Week 4**
-This week, we're going to work with the html webpage you created and add in a **Find Song** feature using the Spotify API!
+Knowing how to work with and call APIs is super important. We're going to practice reading documentation and working with APIs this week by adding a **Find Song** feature to your html webpage!
 We will
 1. learn the basics of using the module design pattern in Javascript
 2. use the Spotify API to find song recommendations
