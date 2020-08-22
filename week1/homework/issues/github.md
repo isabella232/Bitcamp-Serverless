@@ -10,7 +10,7 @@ If you want to learn more about *what it is* and *how to use it*, try taking [th
 
 
 
-**Task 3: create a temporary repository and commit a readme.md file (make sure you know key functions like commits, forking, pull request, branch, etc).**
+**Task 3: create a repository and commit a README.md file (make sure you know key functions like commits, forking, pull request, branch, etc).**
 
 
 
