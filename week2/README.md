@@ -2,9 +2,11 @@
 ### Week 2
 Last week, you should've learned the basics of how to create an Azure Function, along with the basics of triggers and bindings.
 
+<br />
+
 **Livestream:**
 
-In the livestream, we're going to code a HTTP trigger Azure Function that detects facial hair in a submitted picture. For the full video, look in the livestream/videos folder. For the full code, look in the livestream/code.
+In the livestream, we're going to code a HTTP trigger Azure Function that detects facial hair in a submitted picture. For the full video, look in the [video folder](livestream/videos). For the full code, look in the [code folder](livestream/code).
 We'll be going over how to:
 1. parse multipart form data
 2. create a Face API resource
@@ -13,5 +15,10 @@ We'll be going over how to:
 5. test the function using Postman
 
 
+<br />
+
+
+
 **Homework:**
-Create a HTTP trigger Azure Function that uses the Face API to analyze emotion in a picture. The step by step runthrough is located in homework/issues. Follow the issues numerically to complete the project. Any starter and solution code is in the homework/code folder.
+
+Create a HTTP trigger Azure Function that uses the Face API to analyze emotion in a picture. The step by step runthrough is located in the [issues folder](homework/issues). Follow the issues numerically to complete the project. Any starter and solution code is in the [code folder](homework/code) in homework.
