@@ -17,7 +17,7 @@ After you have learned/refreshed your knowledge of JavaScript, let's get started
 **Requirements:**
 
 - Display 12/24 HR time with hours, minutes, and seconds.
-- Must be created using JavaScript (with the exception of HTML and CSS for formatting and styling)
+- Must be created using JavaScript (plus appropriate HTML and CSS for formatting and styling)
 
 **Extensions:**
 
