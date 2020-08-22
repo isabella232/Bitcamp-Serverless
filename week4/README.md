@@ -1,25 +1,22 @@
 # Bitcamp-Serverless
-## Week 2
-Last week, you should've learned the basics of how to create an Azure Function, along with the basics of triggers and bindings.
+## Week 4
+Last week, you created an HTML webpage and called your Azure Function.
 
 ### Learning Objectives
-- retrieving data from Face API
-- making HTTP requests using fetch
-- installing and using npm dependencies
+- using Spotify API
+- basics of module-pattern programming
 
 ### Livestream
-In the livestream, we're going to code a HTTP trigger Azure Function that detects facial hair in a submitted picture. 
+In the livestream, we're going to code a HTML webpage that displays genres, playlists, and songs using the Spotify API.
 - For the full video, look in the [video folder](livestream/videos). 
 - For the full code, look in the [code folder](livestream/code).
 
 We'll be going over how to:
-1. parse multipart form data
-2. create a Face API resource
-3. make a HTTP request to the Face API
-4. configure npm dependencies in Functions
-5. test the function using Postman
+1. create modules in Javascript
+2. authorize your app to access the Spotify platform
+3. make calls the Spotify API to retrieve public data
 
 ### Homework
-Create a HTTP trigger Azure Function that uses the Face API to analyze emotion in a picture. 
+Add on to your current HTML webpage so that when a user clicks the **Find Song** button, a song recommendation will be displayed onscreen.
 - The step by step runthrough is located in the [issues folder](homework/issues). Follow the issues numerically to complete the project. 
 - Any starter and solution code is in the [code folder](homework/code) in homework.
