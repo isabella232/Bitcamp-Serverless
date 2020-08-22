@@ -1,5 +1,28 @@
 # Bitcamp-Serverless
-**Week 3**
+## Week 3
+Last week, you should've learned the basics of how to create an Azure Function, along with the basics of triggers and bindings.
 
-Our Azure Function is complete, but what about the frontend?
-This week, you're going to be making a cool html webpage as well as using Javascript to call our Azure Function!
+
+### Learning Objectives
+- creating an HTML webpage
+- making a HTTP POST request to Azure Function
+- parsing and displaying data retrieved from call
+
+
+### Livestream
+In the livestream, we're going to code a HTTP trigger Azure Function that detects facial hair in a submitted picture. 
+- For the full video, look in the [video folder](livestream/videos). 
+- For the full code, look in the [code folder](livestream/code).
+
+We'll be going over how to:
+1. parse multipart form data
+2. create a Face API resource
+3. make a HTTP request to the Face API
+4. configure npm dependencies in Functions
+5. test the function using Postman
+
+
+### Homework
+Create an HTML webpage that allows the user to submit an image and submit by pressing a button.
+- The step by step runthrough is located in the [issues folder](homework/issues). Follow the issues numerically to complete the project. 
+- Any starter and solution code is in the [code folder](homework/code) in homework.
