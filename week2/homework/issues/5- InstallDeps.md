@@ -27,5 +27,4 @@ npm install parse-multipart
 npm install node-fetch
 ```
 
-
-
+You should be good to go! Reach out to your TA's if there are any issues!
