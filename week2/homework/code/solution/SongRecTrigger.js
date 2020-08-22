@@ -43,11 +43,3 @@ async function analyzeImage(byteArray){
     
     return data; 
 }
-
-
- 
-
-
-
-
-
