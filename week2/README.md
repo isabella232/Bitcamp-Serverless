@@ -2,13 +2,13 @@
 ## Week 2
 Last week, you should've learned the basics of how to create an Azure Function, along with the basics of triggers and bindings.
 
-<br />
 
 ### Learning Objectives
 - retrieving data from Face API
 - making HTTP requests using fetch
 - installing and using npm dependencies
 
+<br />
 
 ### Livestream
 In the livestream, we're going to code a HTTP trigger Azure Function that detects facial hair in a submitted picture. 
