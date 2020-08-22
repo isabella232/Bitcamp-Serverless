@@ -45,4 +45,6 @@ Also, make sure to reference the HTML you created the "clock" id in:
 document.getElementById("clock").innerHTML = " ";
 ```
 
+Good job, hopefully your digital clock is fully working and your jQuery is linked to our HTML and CSS files. Your next task is a bit more tricky... you're making another clock but this time... in analog mode!
+
 If you have any other questions or need further assistance, feel free to reach out to your TAs!
