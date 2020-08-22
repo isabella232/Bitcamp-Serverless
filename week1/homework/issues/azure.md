@@ -4,7 +4,7 @@
 
 ### Azure
 
-So what is "Azure"? Well if you made it into Bit Camp, you really should know already... but according to Microsoft, "*Azure is an ever-expanding set of cloud services to help your organization meet your business challenges. It’s the freedom to build, manage, and deploy applications on a massive, global network using your favorite tools and frameworks*." If you want to learn more about Azure and all its cloud applications, feel free to checkout this [link](https://azure.microsoft.com/en-us/overview/what-is-azure/), an overview of its capabilities.
+So what is "Azure"? Well if you made it into Bit Camp, you really should know already... but according to Microsoft, "*Azure is an ever-expanding set of cloud services to help your organization meet your business challenges. It’s the freedom to build, manage, and deploy applications on a massive, global network using your favorite tools and frameworks*." If you want to learn more about Azure and all its cloud applications, feel free to check out this [link](https://azure.microsoft.com/en-us/overview/what-is-azure/), an overview of its capabilities.
 
 
 
