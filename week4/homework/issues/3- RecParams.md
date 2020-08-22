@@ -2,7 +2,7 @@
 
 Now for the most important function in the `APIController `  module. 
 
-This function gets song recommendations using [**this**](https://developer.spotify.com/documentation/web-api/reference/browse/get-recommendations/) Spotify endpoint.
+This function gets song recommendations using [**this**](https://developer.spotify.com/documentation/web-api/reference/browse/get-recommendations/) Spotify endpoint. This is a critical resource, so...
 
 **READ THE WHOLE THING**.
 
@@ -99,4 +99,3 @@ Inside of your search params, specify these parameter-value pairs:
 3. Set seed_tracks to the function's seedTracks parameter(_getRecommendations(token, **seedTracks**, limit))
 4. Set min_valence to the `minValence`  variable that I already declared for you.
 5. Set max_valence to the `maxValence`  variable
-

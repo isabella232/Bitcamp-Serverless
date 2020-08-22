@@ -78,11 +78,11 @@ Essentially, just remember that modules:
 <br />
 
 
-For more reading, check out [this](https://addyosmani.com/resources/essentialjsdesignpatterns/book/#revealingmodulepatternjavascript) excerpt on the revealing module pattern.
+For more reading, check out [this](https://addyosmani.com/resources/essentialjsdesignpatterns/book/#revealingmodulepatternjavascript) excerpt on the revealing module pattern, as this is not a natural javascript concept if you're new to object-oriented programming.
 
 <br />
 
-In this project, we're going to have two separate modules that handle distinct concerns– one called `APIController` for handling API calls and the other called `UIController` for handling our HTML input fields. A third module, called `APPController`,  will handle the actually retrieving and displaying the data. Each module will have public methods that the `APPController` will call.
+In this project, we're going to have two separate modules that handle distinct concerns– one called `APIController` for handling API calls and the other called `UIController` for handling our HTML input fields. A third module, called `APPController`,  will handle retrieving and displaying the data. Each module will have public methods that the `APPController` will call.
 
 ![modules](images/modules.png)
 
@@ -107,7 +107,6 @@ const APPController = (function(UICtrl, APICtrl) {
 })(UIController, APIController);
 
 ```
-
 
 
 

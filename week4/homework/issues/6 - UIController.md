@@ -16,9 +16,9 @@ const UIController = (function() {
 
 
 
-There isn't a whole lot this module has to do since our app literally only has to display one song.
+There isn't a whole lot this module has to do since our app only has to display one song.
 
-What we do need to add is a reference to the id of html elements that we will need to alter or listen to during runtime. The two elements are the **Find Song** button(it has the id `song-button`) and the `#song-detail`  html div that displays the actual song recommendation. 
+What we do need to add is a reference to the id of html elements that we will need to alter or listen to during runtime. The two elements are the **Find Song** button (it has the id `song-button`) and the `#song-detail`  html div that displays the actual song recommendation. 
 
 <br />
 

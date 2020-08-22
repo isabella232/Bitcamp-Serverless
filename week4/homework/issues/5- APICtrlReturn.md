@@ -2,7 +2,7 @@
 
 Here's the code we have so far for the entire `APIController`  module:
 
-The actual code inside the private methods are hidden for length. Assume that it's there.
+The actual code inside the private methods is hidden for length. Assume that it's there.
 
 ```js
 const APIController = (function() {
@@ -44,7 +44,7 @@ Remember that in the revealing module pattern, we have to explicitly **reveal** 
 
 
 
-Check out the return statement below. We want to publicly reveal all three of our private methods. I've done two of them of them for you. In the return object, I'm creating a new function with the same name but no underscore(`_getToken`  --> `getToken`   and `_getPlaylistItems`  --> `getPlaylistItems`). These new functions just call the corresponding private method and return the result.
+Check out the return statement below. We want to publicly reveal all three of our private methods, and I've done two of them for you. In the return object, I'm creating a new function with the same name but no underscore (`_getToken`  --> `getToken`   and `_getPlaylistItems`  --> `getPlaylistItems`). These new functions just call the corresponding private method and return the result.
 
 Follow the syntax and to return `_getRecommendations(token, seedTracks,limit)`.  Don't forget the parameters!
 
@@ -61,7 +61,7 @@ const APIController = (function() {
     const clientSecret = config.CLIENT_SECRET;
     // private methods
     const _getToken = async () => {
-				//working code 
+        // working code 
     }
     const _getPlaylistItems = async (token, playlistId, limit) => {
         // cool code

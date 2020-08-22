@@ -49,7 +49,7 @@ const APPController = (function(UICtrl, APICtrl) {
 
 
 
-Next, we need to ensure that pressing the **Find Song** button will actually call the Spotify API and get a song. This means that we need to add an `eventListener` to the button. An `eventListener`  basically listens for changes in the html element it is attached to(like a button click) and runs a function when the event happens.
+Next, we need to ensure that pressing the **Find Song** button will actually call the Spotify API and get a song. This means that we need to add an `eventListener` to the button. An `eventListener` listens for changes in the html element it is attached to (like a button click) and runs a function when the event happens.
 
 
 
@@ -98,6 +98,5 @@ buttonElement.addEventListener('click', async(event) => {
 <br />
 
 <br />
-
 
 
