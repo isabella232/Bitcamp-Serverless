@@ -2,13 +2,9 @@
 ## Week 4
 Last week, you created an HTML webpage and called your Azure Function.
 
-<br />
-
 ### Learning Objectives
 - using Spotify API
 - basics of module-pattern programming
-
-<br />
 
 ### Livestream
 In the livestream, we're going to code a HTML webpage that displays genres, playlists, and songs using the Spotify API.
@@ -19,10 +15,6 @@ We'll be going over how to:
 1. create modules in Javascript
 2. authorize your app to access the Spotify platform
 3. make calls the Spotify API to retrieve public data
-
-
-<br />
-
 
 ### Homework
 Add on to your current HTML webpage so that when a user clicks the **Find Song** button, a song recommendation will be displayed onscreen.
