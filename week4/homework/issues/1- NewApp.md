@@ -55,7 +55,7 @@ car.forward();
 <br />
 <br />
 
-Also notice that the method `forward`  does not exist globally. It must be called with a reference to `car`. 
+Also notice that the method `forward`  does not exist globally. It must be called with a reference to `car`. This encapsulation is what will really make it feel object-oriented, with this example having an object-private field and an object-public method.
 
 ```js
 //doesn't work
