@@ -55,7 +55,7 @@ Now we need to create our main function called `handle(event) {}`, it will take 
    <p> anger: ${emotion.anger}</p>
    
    `;
-   // Finish for other data types using the same format (ie. ${emotion.contempt}, and etc)
+   // Finish for other data types using the same format (i.e. ${emotion.contempt}, and etc)
    ```
 
 4. Now that we have our emotion data, we need to calculate valence. Valence is the measurement of happiness or positivity in a song. For example, if a song is sad and depressing, it will have a lower valence and vice-versa. If you want a more detailed explanation, check out this post [here](https://community.spotify.com/t5/Content-Questions/Valence-as-a-measure-of-happiness/td-p/4385221#:~:text=In%20Spotify%27s%20API%20is%20something%20called%20Valence%2C%20that,low%20valence%20sound%20more%20negative%20%28sad%2C%20depressed%2C%20angry%29.).
@@ -78,4 +78,3 @@ Now we need to create our main function called `handle(event) {}`, it will take 
    $('#emotion').html(/* Emotion Data should go here */);
    $('#hidden-emotion').html(/* Valence should go here */);
    ```
-
