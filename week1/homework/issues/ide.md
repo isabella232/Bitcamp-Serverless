@@ -8,7 +8,7 @@ Before we start coding, we need to install an IDE. An IDE is a software applicat
 
 
 
-To install VSC, go to: https://code.visualstudio.com/download and choose your operating system (ie. Windows, Mac, Linux, etc). Then click **Download** and run the installer (usually a .exe or .zip). After it's installed, open it up and try it out. If you need some help navigating VSC, checkout this super helpful [Youtube](https://www.youtube.com/watch?v=VqCgcpAypFQ) video.
+To install VSC, go to: https://code.visualstudio.com/download and choose your operating system (ie. Windows, Mac, Linux, etc). Then click **Download** and run the installer (usually a .exe or .zip). After it's installed, open it up and try it out. If you need some help navigating VSC, check out this super helpful [Youtube](https://www.youtube.com/watch?v=VqCgcpAypFQ) video.
 
 *Make sure to use Dark Theme unless you want to live life on the edge...*
 
