@@ -1,6 +1,6 @@
 ## Downloading an IDE
 
-*For this assignment, you will follow the instructions and at the end, complete a task showing your knowledge of the subject. If at any moment you need help, feel free to contact your TAs.*
+*For this assignment, you will follow the instructions and complete a task showing your knowledge of the subject at the end. If at any moment you need help, feel free to contact your TAs.*
 
 ### Visual Studio Code
 
