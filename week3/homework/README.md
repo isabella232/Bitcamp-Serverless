@@ -2,24 +2,22 @@
 ## Week 3
 Last week, you should've learned the basics of how to create an Azure Function, along with the basics of triggers and bindings.
 
-
 ### Learning Objectives
-- creating an HTML webpage
-- making a HTTP POST request to Azure Function
-- parsing and displaying data retrieved from call
+- Creating an HTML webpage
+- Making a HTTP POST request to Azure Function
+- Parsing and displaying data retrieved from call
 
 
 ### Livestream
-In the livestream, we're going to code a HTTP trigger Azure Function that detects facial hair in a submitted picture. 
+In the livestream, we're going to be going over how to create a basic HTML and CSS website that takes an image in as an input. As well, you will be learning how to use jQuery to send an image through a POST request to your Azure Function.
 - For the full video, look in the [video folder](livestream/videos). 
 - For the full code, look in the [code folder](livestream/code).
 
 We'll be going over how to:
-1. parse multipart form data
-2. create a Face API resource
-3. make a HTTP request to the Face API
-4. configure npm dependencies in Functions
-5. test the function using Postman
+1. Code a page in HTML
+2. Stylize it in CSS
+3. Send an image through a POST request
+4. Call your Azure Function
 
 
 ### Homework
