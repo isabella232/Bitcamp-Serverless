@@ -9,7 +9,7 @@ The Azure Function needs to:
 <br />
 
 
-We're going to be focusing on Part 1, which involves parsing multipart form data. In any HTML `<Form>` element that receives involves a file upload(which ours does), the data is encoded in the `multipart/form-data` method. The default http encoding method is `application/x-www-form-urlencoded`, which encodes text into name/value pairs and works for text inputs but is inefficient for file or binary inputs. `multipart/form-data` indicates that one or more files are being inputted. Parsing this type of data is a little more complicated than usual. To simplify the process, we're going to use a npm library called `parse-multipart`.  
+We're going to be focusing on Part 1, which involves parsing multipart form data. In any HTML `<Form>` element that receives involves a file upload (which ours does), the data is encoded in the `multipart/form-data` method. The default http encoding method is `application/x-www-form-urlencoded`, which encodes text into name/value pairs and works for text inputs, but it is inefficient for files or binary inputs. `multipart/form-data` indicates that one or more files are being inputted. Parsing this type of data is a little more complicated than usual. To simplify the process, we're going to use an npm library called `parse-multipart`.  
 
 <br />
 
@@ -38,7 +38,7 @@ module.exports = async function (context, req) {
 
 <br />
 
-Before we start parsing, go to the [parse-multipart](https://www.npmjs.com/package/parse-multipart) documentation and read it.  Look specifically at the example in the **Usage** section and what they are doing. We're going to do something similar.
+Before we start parsing, go to the [parse-multipart](https://www.npmjs.com/package/parse-multipart) documentation for some context on what the package does.  Look specifically at the example in the **Usage** section and what they are doing, as we're going to do something similar.
 
 <br />
 
@@ -61,4 +61,3 @@ var body = '<WHAT GOES HERE?>'
 // parse the body
 var parts = multipart.Parse(body, boundary);
 ```
-

@@ -12,7 +12,7 @@ module.exports = async function (context, req) {
 
     var boundary = multipart.getBoundary(req.headers['content-type']);
     
-  	var body = req.body;
+    var body = req.body;
   
     var parts = multipart.Parse(body, boundary);
 };
@@ -21,7 +21,7 @@ module.exports = async function (context, req) {
 <br />
 <br />
 
-We're going to create a new function, outside of  `module.exports`  that will handle analyzing the image(this function is **async** because we will be using the **await** keyword with the API call).  This function is called `analyzeImage(img)`  and takes in one parameter, `img`, that contains the image we're trying to analyze.  Inside, we have two variables involved in the call: `subscriptionKey`  and `uriBase`.  Substitute the necessary values with your own info.
+We're going to create a new function, outside of  `module.exports`  that will handle analyzing the image (this function is **async** because we will be using the **await** keyword with the API call).  This function is called `analyzeImage(img)`  and takes in one parameter, `img`, that contains the image we're trying to analyze.  Inside, we have two variables involved in the call: `subscriptionKey`  and `uriBase`.  Substitute the necessary values with your own info.
 
 ```js
 async function analyzeImage(img){
@@ -35,7 +35,7 @@ async function analyzeImage(img){
 
 Now, we want to set the parameters of our POST request and specify the exact data that we want.
 
-The documentation for the Face API is [here](https://westus.dev.cognitive.microsoft.com/docs/services/563879b61984550e40cbbe8d/operations/563879b61984550f30395236). Read through it. Notice that the request url is this:
+The documentation for the Face API is [here](https://westus.dev.cognitive.microsoft.com/docs/services/563879b61984550e40cbbe8d/operations/563879b61984550f30395236). Read through it, and notice that the request url is this:
 
 **https://{endpoint}/face/v1.0/detect\[?returnFaceId]\[&returnFaceLandmarks]\[&returnFaceAttributes]\[&recognitionModel]\[&returnRecognitionModel][&detectionModel]**
 
@@ -53,6 +53,5 @@ let params = new URLSearchParams({
 	'<PARAMETER NAME>': '<PARAMETER VALUE>'     //FILL IN THIS LINE
 })
 ```
-
 
 

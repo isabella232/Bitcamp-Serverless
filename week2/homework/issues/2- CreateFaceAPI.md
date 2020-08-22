@@ -9,4 +9,4 @@ This step is fairly straightforward:
 
 
 
-Record the API endpoint and subscription key.
+Record and save the API endpoint and subscription key, as we'll be using it in the following parts.
