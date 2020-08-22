@@ -8,7 +8,7 @@ So what is "Azure"? Well if you made it into Bit Camp, you really should know al
 
 
 
-To create an Azure account, go to:https://azure.microsoft.com/en-us/free/ and press **Start free** to be relocated to a signup page. After signing in with your Microsoft account and filling in your personal details, you will be asked to add a credit card. Rest assure, this is only for security purposes, you won't be charged unless you choose to buy a premium account. If you need some help navigating Azure, checkout this super helpful [resource](https://azure.microsoft.com/en-us/get-started/) provided by Microsoft.
+To create an Azure account, go to: https://azure.microsoft.com/en-us/free/ and press **Start free** to be relocated to a signup page. After signing in with your Microsoft account and filling in your personal details, you will be asked to add a credit card. Rest assured, this is only for security purposes (preventing multiple free accounts per person), and **you won't be charged** unless you choose to buy a premium account, which we do not need for this course. If you need some help navigating Azure, check out this super helpful [resource](https://azure.microsoft.com/en-us/get-started/) provided by Microsoft.
 
 
 
