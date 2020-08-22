@@ -10,6 +10,7 @@ Navigate to your Function App. **This is not the function code, but the actual a
 
 In the left tab, scroll down to **Console**.
 
+
 ![console](images/console.png)
 
 
