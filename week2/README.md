@@ -2,6 +2,7 @@
 ## Week 2
 Last week, you should've learned the basics of how to create an Azure Function, along with the basics of triggers and bindings.
 
+<br />
 
 ### Learning Objectives
 - retrieving data from Face API
