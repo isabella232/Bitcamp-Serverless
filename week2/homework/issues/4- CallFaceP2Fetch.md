@@ -10,12 +10,12 @@ var fetch = '<CODE HERE>'
 <br />
 <br />
 
-Read through the **API** section of the documentation.  Link [here](https://www.npmjs.com/package/node-fetch#api). We're going to make a call using the `fetch(url, {options})`  function.
+Read through the **API** section of the documentation.  Link [here](https://www.npmjs.com/package/node-fetch#api). We're going to make a call using the `fetch(url, {options})` function.
 
 <br />
 
 
-We're calling the `fetch`  function- notice the **await** keyword, which we need because `fetch`  returns a **Promise**. I've set the url for you- notice that it is just the uriBase with the params we specified earlier appended on.
+We're calling the `fetch` function- notice the **await** keyword, which we need because `fetch` returns a **Promise**(a promise is a proxy for a value that isn't currently known). Read about Javascript promises [here](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise). I've set the url for you- notice that it is just the uriBase with the params we specified earlier appended on.
 
 <br />
 
