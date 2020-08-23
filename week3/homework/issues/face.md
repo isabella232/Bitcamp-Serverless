@@ -1,10 +1,13 @@
 ## Displaying Emotion Data and Calculating Valence
 
+In the html page, we referenced a face.js file. Create a new file called face.js that will handle javascript related to the form and Azure Function call.
+
 Now that our image has been analyzed by the Face API, we have received emotion data in JSON format. Our task is to read the JSON file and do two things, output the emotions in the image (ie. anger, contempt, disgust, etc) and convert the emotions to a scale called valence. This is what we are going to use to determine whether we recommend a song that is happy, sad, angry, etc.
 
 
 
-The first thing we need to do is create a function called `loadFile(event) {}` which does two things, creates a variable called image which gets the ID "output" and displays the image the user uploaded. To do this, we need to get the element ID by using `document.getElementByID(id)`:
+The first thing we need to do is create a function called `loadFile(event) {}` inside face.js which does two things, creates a variable called image which gets the ID "output" and displays the image the user uploaded. Every time the user presses **Upload File**, we want to display whatever image they choose. To do this, we need to get the element ID by using `document.getElementByID(id)`:
+(the id for this img is 'output')
 
 ```javascript
 var image = //Call for element ID here
@@ -18,6 +21,9 @@ function loadFile(event) {
     image.src = //Load inputted image
 };
 ```
+
+<br />
+
 
 Now we need to create our main function called `handle(event) {}`. It will be called when the user presses submit, and will submit the image to our Azure Function for analysis. Using the data from the Face API, it will convert the numbers into valence which will be later used to determine which song(s) to recommend to the user.
 
