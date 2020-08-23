@@ -32,7 +32,7 @@ Now we need to create our main function called `handle(event) {}`, it will take 
 2. After telling our HTML to show the content "Loading", we need to set a few variables to create a new form with our emotion data. We can do this by adding a variable set to an element ID and creating a new FormData based on the received information:
 
    ```javascript
-   var myform = document.getElementById('myform');
+   var myform = document.getElementById('image-form');
        var payload = new FormData(myform);
    
        const resp = await fetch(/*Add Function URL */, {
