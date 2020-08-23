@@ -19,13 +19,13 @@ function loadFile(event) {
 };
 ```
 
-Now we need to create our main function called `handle(event) {}`, it will take in the response and using the data from the Face API, create a new form that includes the amount of different emotions. As well, using the data from the Face API, it will convert the numbers into valence which will be later used to determine which song(s) to recommend to the user.
+Now we need to create our main function called `handle(event) {}`. It will be called when the user presses submit, and will submit the image to our Azure Function for analysis. Using the data from the Face API, it will convert the numbers into valence which will be later used to determine which song(s) to recommend to the user.
 
 1. Using jQuery, target the output element ID and change the content to equal "Loading". Then add the line, `event.preventDefault();` to disable the ability to reload the page. To event target with jQuery, use this sample:
 
    ```javascript
-   console.log ("submitting form...");
-   $(/*Add ID here*/).html(/*Add content here*/)
+
+   $(/*Add ID here*/).html("Loading...")
    //make sure to disable reload here...
    ```
 
@@ -41,7 +41,7 @@ Now we need to create our main function called `handle(event) {}`, it will take 
    });
    ```
 
-3. Next we have to add a variable for the JSON data. Make a new variable called `data` and set it to the response JSON like we did earlier... If you need a hint, use the `.json()` function. We also need a couple more variables, the first called `emotion` which will be set to `data.result[0].faceAttributes.emotion;`. This basically sets emotion to the first result in our JSON data to pull the information out into a value. Lastly, we have to create the HTML that will actually be displayed:
+3. Next we have to add a variable for the JSON data. Make a new variable called `data` and set it to the response JSON like we did earlier... If you need a hint, use the `.json()` function. We also need a couple more variables, the first called `emotion` which will be set to `data.result[0].faceAttributes.emotion;`. This references the emotion data from the Face API. Lastly, we have to create the HTML that will actually be displayed:
 
    ​	i. First, create an `<h3>` tag for the title labelled `emotions in this image:` (make sure to add `<br />` at the end to skip a line)
 
