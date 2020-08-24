@@ -12,8 +12,8 @@ This week will focus on three topics: downloading an IDE (visual studio code), c
 
 In the livestream, we're going to be going over how to install an IDE, setting up an Azure account, and lastly, how to use GitHub (the basics).
 
-- For the full video, look in the [video folder](https://github.com/bitprj/Bitcamp-Serverless/blob/master/week3/livestream/videos).
-- For the full code, look in the [code folder](https://github.com/bitprj/Bitcamp-Serverless/blob/master/week3/livestream/code).
+- For the full video, look in the [video folder](https://github.com/bitprj/Bitcamp-Serverless/blob/master/week1/livestream/loom.md).
+- For the full code, look in the [code folder](https://github.com/bitprj/Bitcamp-Serverless/blob/master/week1/livestream/code).
 
 We'll be going over how to:
 
