@@ -22,5 +22,5 @@ We'll be going over how to:
 
 ### Homework
 Create an HTML webpage that allows the user to submit an image and submit by pressing a button.
-- The step by step runthrough is located in the [issues folder](homework/issues). Follow the issues numerically to complete the project. 
-- Any starter and solution code is in the [code folder](homework/code/solution) in homework.
+- The step by step runthrough is located in the [issues folder](https://github.com/bitprj/Bitcamp-Serverless/tree/master/week3/homework/livestreams/loom.md). Follow the issues numerically to complete the project. 
+- Any starter and solution code is in the [code folder](https://github.com/bitprj/Bitcamp-Serverless/tree/master/week3/homework/code/solution) in homework.
