@@ -8,6 +8,19 @@ This week will focus on three topics: downloading an IDE (visual studio code), c
 - Configuring Azure, specifically Azure Functions
 - Learning How to Use GitHub (commits, pull requests, etc)
 
+### Livestream
+
+In the livestream, we're going to be going over how to install an IDE, setting up an Azure account, and lastly, how to use GitHub (the basics).
+
+- For the full video, look in the [video folder](https://github.com/bitprj/Bitcamp-Serverless/blob/master/week3/livestream/videos).
+- For the full code, look in the [code folder](https://github.com/bitprj/Bitcamp-Serverless/blob/master/week3/livestream/code).
+
+We'll be going over how to:
+
+1. Installing Visual Studio Code
+2. Creating an Azure Account
+3. Learning the Basics of GitHub
+
 
 ### Homework
 
