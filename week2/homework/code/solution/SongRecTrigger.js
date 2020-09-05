@@ -1,3 +1,5 @@
+//Azure Function HTTP trigger code
+
 var multipart = require("parse-multipart");
 var fetch = require('node-fetch');
   
