@@ -12,7 +12,7 @@ module.exports = async function (context, req) {
     };
 }
 
-// JSON Response
+// Metadata Response
 
 {
     "bindings": [
