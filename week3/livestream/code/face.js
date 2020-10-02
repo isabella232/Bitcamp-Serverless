@@ -11,7 +11,7 @@ async function handle(event) {
     var myForm = document.getElementById('image-form');
     var payload = new FormData(myForm);
 
-    const resp = await fetch('https://week2beardexample.azurewebsites.net/api/BeardDetection', {
+    const resp = await fetch(functionURL, {
         method: 'POST',
         body: payload,
     });
