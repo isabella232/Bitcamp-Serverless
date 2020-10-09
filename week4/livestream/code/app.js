@@ -69,7 +69,7 @@ const UIController = (function() {
     
             const html = 
             `
-            <div data-id=${album.id} class="album-detail">
+            <div id=${album.id} class="album-detail">
                 <img src="${album.images[2].url}" alt="">              
                 ${album.name}
                 <br />
@@ -107,6 +107,7 @@ const UIController = (function() {
 //album.images[2].url, album.name, album.artists[0].name
 const APPController = (function(APICtrl, UICtrl) {
     const DOMInputs = UICtrl.inputField;
+
     const loadNewReleases = async () =>  {
         const token = await APICtrl.getToken();
         const albums = await APICtrl.getNewReleases(token, 10);
@@ -121,7 +122,7 @@ const APPController = (function(APICtrl, UICtrl) {
         const token = await APICtrl.getToken();
 
         // get the album id
-        const id = e.target.dataset.id;
+        const id = e.target.id;
 
         const tracks = await APICtrl.getAlbumTracks(token, id, 10);
         tracks.forEach(track => UICtrl.createTrackDetail(track))
