@@ -54,6 +54,7 @@ const APIController = (function() {
 
 const UIController = (function() {
     const DOMElements = {
+        token: '#hidden-token',
         albumList: '#album-list',
         songList: '#song-list',
     }
@@ -76,11 +77,10 @@ const UIController = (function() {
                 ${album.artists[0].name}
                 
             </div> 
-            
+            <br />
             `;
 
             detailDiv.insertAdjacentHTML('beforeend', html)
-            detailDiv.insertAdjacentHTML('beforeend', '<br />')
         },
 
         createTrackDetail(track){
@@ -88,7 +88,7 @@ const UIController = (function() {
     
             const html = 
             `
-            <div data-id=${track.id} class="song-detail">           
+            <div id=${track.id} class="song-detail">           
                 ${track.name}
          
             </div> 
@@ -100,6 +100,14 @@ const UIController = (function() {
 
         clearTrackDetail(){
             document.querySelector(DOMElements.songList).innerHTML = '';
+        },
+
+        setToken(token) {
+            document.querySelector(DOMElements.token).innerHTML = token
+        },
+
+        getToken() {
+            return document.querySelector(DOMElements.token).innerHTML
         }
     }
 })();
@@ -110,16 +118,18 @@ const APPController = (function(APICtrl, UICtrl) {
 
     const loadNewReleases = async () =>  {
         const token = await APICtrl.getToken();
+        UICtrl.setToken(token)
         const albums = await APICtrl.getNewReleases(token, 10);
         albums.forEach(album => UICtrl.createAlbumDetail(album))
     }
 
-        // create song selection click event listener
+    // create song selection click event listener
     DOMInputs.albums.addEventListener('click', async (e) => {
         // prevent page reset
         e.preventDefault();
         UICtrl.clearTrackDetail();
-        const token = await APICtrl.getToken();
+        // const token = await APICtrl.getToken();
+        const token = UICtrl.getToken()
 
         // get the album id
         const id = e.target.id;
